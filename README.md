@@ -1,5 +1,5 @@
 # pac-poc-spingo
-Proof-of-concept (POC) to demonstrate a code repo with a requirement for implementing a standardised convention for project packaging, build & release lifecycle.  This sample illustrates the scheme with a simple Python code project.
+Proof-of-concept (POC). Demonstrates a code repo with a standardised scheme for the project build, packaging & release lifecycle.  This sample illustrates the scheme with a simple Python code project.
 
 ## Building the project
 
@@ -28,9 +28,9 @@ The above command did everything necessary to build, package, release and deploy
 ./build.sh deploy
 ```
 You can execute the script at any of the intermediate phases. 
-Each phase performs the proceeding ones and then itself.  
+Each phase performs the proceeding ones in order and then itself.  
 
-You can also execute a clean; this is not run as part of the default lifecycle.
+You can also execute a `clean` command; this is not run as part of the default lifecycle.
 
 ```sh
 ./build.sh clean
